@@ -10,6 +10,7 @@ Fork del plugin original: https://github.com/sarriaroman/FabricPlugin
 1. Setup your [Fabric.io](https://fabric.io) account and get your API Key and Build Secret from your [organization page](https://www.fabric.io/settings/organizations/).
 1. Add a plugin to your project using Cordova CLI, specifying the keys with the `--variable` argument:
 
+```
 # Install directly from github:
 # (replace x.x.x with the tag of the version your want, or omit for HEAD)
 cordova plugin add https://github.com/Simbiosys/FabricPlugin  --variable FABRIC_API_KEY=XXX --variable FABRIC_API_SECRET=xxx
