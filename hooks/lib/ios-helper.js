@@ -76,6 +76,7 @@ module.exports = {
     removeShellScriptBuildPhase: function (context, xcodeProjectPath) {
         // Read and parse the XCode project (.pxbproj) from disk.
         // File format information: http://www.monobjc.net/xcode-project-file-format.html
+        var xcodeProject = xcode.project(xcodeProjectPath);
         xcodeProject.parseSync();
 
         // First, we want to delete the build phase block itself.
