@@ -2,13 +2,7 @@
 [![Backers on Open Collective](https://opencollective.com/FabricPlugin/backers/badge.svg)](#backers)
  [![Sponsors on Open Collective](https://opencollective.com/FabricPlugin/sponsors/badge.svg)](#sponsors) 
  
-This is a [Cordova](http://cordova.apache.org/) plugin for [Fabric.io](https://www.fabric.io)'s Crashlytics and Answers services.
-
-It requires Cordova 6.x or newer (tested on 7.0.0) and has APIs for iOS and Android.
-
-The iOS version uses Fabric SDK 1.7.5 and Crashlytics SDK 3.10.1 framework bundles which are located in `lib/ios`.
-
-The Android version uses Gradle to get the Fabric SDK (`io.fabric.tools:gradle:1.+`) and the Crashlytics SDK (`com.crashlytics.sdk.android:crashlytics:2.9.1`) from Maven repositories when the plugin is added.
+Fork del plugin original: https://github.com/sarriaroman/FabricPlugin
 
 # Install
 
@@ -16,13 +10,9 @@ The Android version uses Gradle to get the Fabric SDK (`io.fabric.tools:gradle:1
 1. Setup your [Fabric.io](https://fabric.io) account and get your API Key and Build Secret from your [organization page](https://www.fabric.io/settings/organizations/).
 1. Add a plugin to your project using Cordova CLI, specifying the keys with the `--variable` argument:
 
-```bash
-# Install from npm registry:
-cordova plugin add cordova-fabric-plugin --variable FABRIC_API_KEY=XXX --variable FABRIC_API_SECRET=xxx
-
-# Or to install directly from github:
+# Install directly from github:
 # (replace x.x.x with the tag of the version your want, or omit for HEAD)
-cordova plugin add https://github.com/sarriaroman/FabricPlugin#x.x.x  --variable FABRIC_API_KEY=XXX --variable FABRIC_API_SECRET=xxx
+cordova plugin add https://github.com/Simbiosys/FabricPlugin  --variable FABRIC_API_KEY=XXX --variable FABRIC_API_SECRET=xxx
 ```
 
 > Note: If you have never registered an app with your organization, the [organization page](https://www.fabric.io/settings/organizations/) may redirect you to a wizard preventing you from obtaining your keys. You may be able to obtain your keys from [this page](https://fabric.io/kits/ios/crashlytics/install). Scroll down to the "Run Script Build Phase" block. The first, shorter string is the API key and the second, longer string is the build secret. If that doesn't work you can follow the wizard and integrate the kit into a dummy "Hello World" project which should then unlock the organization page.
